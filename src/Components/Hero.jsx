@@ -2,7 +2,10 @@ import heroImage from "../assets/image.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] w-full items-center overflow-hidden bg-[#002b40] py-12 sm:py-16 md:py-20">
+    <section
+      id="home"
+      className="relative flex min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] w-full items-center overflow-hidden bg-[#002b40] py-12 sm:py-16 md:py-20"
+    >
       {/* Background Image */}
       <img
         src={heroImage}
@@ -13,7 +16,7 @@ export default function Hero() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#002b40] via-[#002b40]/85 to-[#002b40]/40 md:via-[#002b40]/55 md:to-transparent" />
 
-      {/* Content Container: Navbar ke logo ke sath perfectly aligned (px-4 sm:px-6 lg:px-8) */}
+      {/* Content Container */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
         <p className="mb-2 text-[clamp(15px,2vw,22px)] font-semibold text-cyan-300">
           Clear Vision <span className="px-1">•</span> Better Tomorrow
