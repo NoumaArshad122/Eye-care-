@@ -76,12 +76,12 @@ export default function PatientStories() {
                     </div>
 
                     {/* Navigation Arrows */}
-                    <div className="flex items-center gap-2.5 self-start sm:self-auto">
+                    <div className="flex items-center gap-2 self-start sm:self-auto">
                         <button
                             type="button"
                             onClick={prevReview}
                             aria-label="Previous review"
-                            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
                         >
                             <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
                         </button>
@@ -89,7 +89,7 @@ export default function PatientStories() {
                             type="button"
                             onClick={nextReview}
                             aria-label="Next review"
-                            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
                         >
                             <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
                         </button>

@@ -60,10 +60,10 @@ export default function Appointment() {
                             <button
                                 type="button"
                                 onClick={() => document.getElementById('appointment-name')?.focus()}
-                                className="inline-flex items-center gap-2 rounded-full bg-[#00c6b7] hover:bg-[#00b3a5] text-white px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold shadow-lg shadow-cyan-900/40 transition-all duration-200 cursor-pointer"
+                                className="inline-flex items-center gap-1.5 rounded-full bg-[#00c6b7] hover:bg-[#00b3a5] text-white px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base font-semibold shadow-lg shadow-cyan-900/40 transition-all duration-200 cursor-pointer"
                             >
                                 <span>Book Appointment</span>
-                                <span className="text-base font-normal">→</span>
+                                <span className="text-sm sm:text-base font-normal">→</span>
                             </button>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ export default function Appointment() {
                                     <div className="pt-2">
                                         <button
                                             type="submit"
-                                            className="w-full rounded-lg bg-[#002b40] hover:bg-[#003c59] text-white py-3 px-6 text-sm sm:text-base font-semibold shadow-md transition-colors cursor-pointer"
+                                            className="w-full rounded-lg bg-[#002b40] hover:bg-[#003c59] text-white py-2.5 sm:py-3 px-4 text-xs sm:text-sm md:text-base font-semibold shadow-md transition-colors cursor-pointer"
                                         >
                                             Submit Appointment
                                         </button>

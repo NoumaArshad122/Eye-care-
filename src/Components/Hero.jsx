@@ -35,17 +35,17 @@ export default function Hero() {
           <br className="hidden sm:block" /> and a patient-first approach.
         </p>
 
-        <div className="mt-5 flex flex-wrap gap-3">
+        <div className="mt-5 flex flex-wrap gap-2.5 sm:gap-3">
           <a
             href="#appointment"
-            className="rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-2 shadow-sm"
+            className="rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-1.5 shadow-sm"
           >
             <span>Book Appointment</span>
-            <span>→</span>
+            <span className="text-sm">→</span>
           </a>
           <a
             href="#about"
-            className="rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
+            className="rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
           >
             Learn More
           </a>
