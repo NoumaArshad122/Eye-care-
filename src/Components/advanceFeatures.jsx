@@ -27,7 +27,7 @@ export default function AdvancedTechnology() {
     ];
 
     return (
-        <section id="technology" className="relative w-full bg-white py-12 md:py-16 overflow-hidden scroll-mt-16">
+        <section id="gallery" className="relative w-full bg-white py-12 md:py-16 overflow-hidden scroll-mt-16">
             {/* Top Area: Text & Full-Bleed Right Image */}
             <div className="relative w-full">
                 {/* Desktop Full-Bleed Image: touches right edge of screen with zero margin */}
