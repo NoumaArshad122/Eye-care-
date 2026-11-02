@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import buildingImg from '../assets/brimage.jpeg';
+import buildingImg from '../assets/hospiral.png';
 
 export default function Contact() {
     return (
