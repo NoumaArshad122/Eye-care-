@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, ChevronDown, CheckCircle } from 'lucide-react';
-import appBgImg from '../assets/appbgimg.png';
+import appBgImg from '../assets/appbgimg.jpg';
 
 export default function Appointment() {
     const [submitted, setSubmitted] = useState(false);
@@ -30,6 +30,8 @@ export default function Appointment() {
             <img
                 src={appBgImg}
                 alt="Appointment Section Background"
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover object-center"
             />
 

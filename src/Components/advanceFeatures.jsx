@@ -35,6 +35,8 @@ export default function AdvancedTechnology() {
                     <img
                         src={techImage}
                         alt="Advanced Eye Technology Equipment"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover object-center"
                     />
                 </div>
@@ -46,6 +48,8 @@ export default function AdvancedTechnology() {
                         <img
                             src={techImage}
                             alt="Advanced Eye Technology Equipment"
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover object-center"
                         />
                     </div>

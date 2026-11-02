@@ -20,6 +20,8 @@ export default function WhyChooseUs() {
                 <img
                     src={doctorPatientImg}
                     alt="Doctor checking patient"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-right"
                 />
 
@@ -30,6 +32,8 @@ export default function WhyChooseUs() {
                 <img
                     src={doctorPatientImg}
                     alt="Doctor checking patient"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-right"
                 />
             </div>

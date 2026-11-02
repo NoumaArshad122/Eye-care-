@@ -1,5 +1,5 @@
 import React from "react";
-import Reception from "../assets/reception.png";
+import Reception from "../assets/reception.jpg";
 
 export default function Aboutus() {
     return (
@@ -11,6 +11,8 @@ export default function Aboutus() {
                         <img
                             src={Reception}
                             alt="Hospital Reception"
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover"
                         />
                     </div>

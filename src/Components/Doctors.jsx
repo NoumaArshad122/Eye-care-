@@ -65,6 +65,8 @@ export default function Doctors() {
                             <img
                                 src={doctor.image}
                                 alt={doctor.name}
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                             />
                         </div>

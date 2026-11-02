@@ -1,15 +1,16 @@
-import heroImage from "../assets/image.jpg";
-
 export default function Hero() {
   return (
     <section
       id="home"
       className="relative flex min-h-[440px] sm:min-h-[500px] lg:min-h-[560px] w-full items-center overflow-hidden bg-[#002b40] py-10 sm:py-14 md:py-20"
     >
-      {/* Background Image */}
+      {/* Background Image with LCP Optimization */}
       <img
-        src={heroImage}
+        src="/hero.jpg"
         alt="Close-up of an eye being examined"
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
         className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[65%] md:scale-[1.15] md:opacity-100"
       />
 

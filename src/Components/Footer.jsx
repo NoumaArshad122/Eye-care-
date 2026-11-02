@@ -33,6 +33,8 @@ export default function Footer() {
                             <img
                                 src={logo}
                                 alt="Eye Hospital Logo"
+                                loading="lazy"
+                                decoding="async"
                                 className="h-10 w-auto object-contain"
                             />
                             <div>

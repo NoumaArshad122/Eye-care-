@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import buildingImg from '../assets/hospiral.png';
+import buildingImg from '../assets/hospiral.jpg';
 
 export default function Contact() {
     return (
@@ -10,6 +10,8 @@ export default function Contact() {
                 <img
                     src={buildingImg}
                     alt="Eye Hospital Building"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-center"
                 />
             </div>
@@ -22,6 +24,8 @@ export default function Contact() {
                     <img
                         src={buildingImg}
                         alt="Eye Hospital Building"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover object-center"
                     />
                 </div>

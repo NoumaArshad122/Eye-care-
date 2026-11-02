@@ -118,6 +118,8 @@ export default function PatientStories() {
                                 <img
                                     src={review.image}
                                     alt={review.name}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-11 h-11 rounded-full object-cover shrink-0 ring-2 ring-cyan-100"
                                     onError={(e) => {
                                         // Fallback if image fails to load

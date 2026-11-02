@@ -30,6 +30,8 @@ function Navbar() {
           <img
             src={logo}
             alt="Eye Hospital logo"
+            loading="eager"
+            decoding="async"
             className="h-9 w-auto object-contain sm:h-10"
           />
           <h2 className="text-lg font-bold text-gray-900 sm:text-xl">
