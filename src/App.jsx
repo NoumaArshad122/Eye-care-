@@ -8,6 +8,7 @@ import Doctors from "./Components/Doctors";
 import AdvancedTechnology from "./Components/advanceFeatures";
 import Reviews from "./Components/revirws";
 import Appointment from "./Components/Appointment";
+import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <AdvancedTechnology />
         <Reviews />
         <Appointment />
+        <Contact />
       </main>
       <Footer />
     </div>

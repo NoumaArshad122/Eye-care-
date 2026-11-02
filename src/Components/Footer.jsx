@@ -22,7 +22,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer id="contact" className="w-full bg-[#002b40] text-white pt-12 pb-6 border-t border-cyan-950/60">
+        <footer id="footer" className="w-full bg-[#002b40] text-white pt-12 pb-6 border-t border-cyan-950/60">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 pb-8 border-b border-cyan-900/40">
