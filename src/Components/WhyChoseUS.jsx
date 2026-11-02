@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import doctorPatientImg from '../assets/doctor-image.jpg';
+import doctorPatientImg from '../assets/doctor-image.webp';
 
 export default function WhyChooseUs() {
     const benefitsList = [

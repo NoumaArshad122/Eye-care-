@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, ChevronDown, CheckCircle } from 'lucide-react';
-import appBgImg from '../assets/appbgimg.jpg';
+import appBgImg from '../assets/appbgimg.webp';
 
 export default function Appointment() {
     const [submitted, setSubmitted] = useState(false);

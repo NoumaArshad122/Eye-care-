@@ -1,6 +1,6 @@
 import React from 'react';
 import { Eye, Laser, ScanEye, ShieldPlus } from 'lucide-react';
-import techImage from '../assets/techimg.jpeg';
+import techImage from '../assets/techimg.webp';
 
 export default function AdvancedTechnology() {
     const techCards = [

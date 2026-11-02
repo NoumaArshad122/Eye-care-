@@ -1,9 +1,9 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import drAhmadImg from '../assets/DrAhmadrehman.jpeg';
-import drSaraImg from '../assets/brimage.jpeg';
-import drNazmulImg from '../assets/Dr.nazmulhussain.jpeg';
-import drFatimaImg from '../assets/Dr fatima.jpeg';
+import drAhmadImg from '../assets/DrAhmadrehman.webp';
+import drSaraImg from '../assets/brimage.webp';
+import drNazmulImg from '../assets/Dr.nazmulhussain.webp';
+import drFatimaImg from '../assets/Dr fatima.webp';
 
 export default function Doctors() {
     const doctorsData = [

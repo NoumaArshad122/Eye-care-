@@ -6,7 +6,7 @@ export default function Hero() {
     >
       {/* Background Image with LCP Optimization */}
       <img
-        src="/hero.jpg"
+        src="/hero.webp"
         alt="Close-up of an eye being examined"
         fetchpriority="high"
         loading="eager"

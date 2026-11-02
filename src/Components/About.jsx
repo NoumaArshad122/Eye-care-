@@ -1,5 +1,5 @@
 import React from "react";
-import Reception from "../assets/reception.jpg";
+import Reception from "../assets/reception.webp";
 
 export default function Aboutus() {
     return (
