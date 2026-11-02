@@ -6,7 +6,7 @@ import Services from "./Components/Service";
 import WhyChooseUs from "./Components/WhyChoseUS";
 import Doctors from "./Components/Doctors";
 import AdvancedTechnology from "./Components/advanceFeatures";
-import Reviews from "./Components/revirws";
+import Reviews from "./Components/Reviews";
 import Appointment from "./Components/Appointment";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
