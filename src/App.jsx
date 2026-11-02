@@ -6,6 +6,7 @@ import Services from "./Components/Service";
 import WhyChooseUs from "./Components/WhyChoseUS";
 import Doctors from "./Components/Doctors";
 import AdvancedTechnology from "./Components/advanceFeatures";
+import Reviews from "./Components/revirws";
 import Footer from "./Components/Footer";
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <WhyChooseUs />
         <Doctors />
         <AdvancedTechnology />
+        <Reviews />
       </main>
       <Footer />
     </div>
