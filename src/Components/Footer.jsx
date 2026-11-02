@@ -22,10 +22,10 @@ export default function Footer() {
     ];
 
     return (
-        <footer id="contact" className="w-full bg-[#002b40] text-white pt-16 pb-8 border-t border-cyan-950/60">
+        <footer id="contact" className="w-full bg-[#002b40] text-white pt-12 pb-6 border-t border-cyan-950/60">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12 border-b border-cyan-900/40">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 pb-8 border-b border-cyan-900/40">
 
                     {/* Column 1: Brand & About */}
                     <div className="space-y-4">
@@ -149,29 +149,23 @@ export default function Footer() {
                             Contact Info
                         </h4>
                         <ul className="space-y-3.5">
-                            <li className="flex items-start gap-3">
-                                <div className="w-8 h-8 rounded-full bg-cyan-950/70 border border-cyan-800/40 flex items-center justify-center text-cyan-400 shrink-0 mt-0.5">
-                                    <Phone className="w-4 h-4" />
-                                </div>
-                                <span className="text-gray-300 text-sm leading-relaxed pt-1">
+                            <li className="flex items-center gap-3">
+                                <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
+                                <span className="text-gray-300 text-sm">
                                     +8801234 567890
                                 </span>
                             </li>
 
-                            <li className="flex items-start gap-3">
-                                <div className="w-8 h-8 rounded-full bg-cyan-950/70 border border-cyan-800/40 flex items-center justify-center text-cyan-400 shrink-0 mt-0.5">
-                                    <Mail className="w-4 h-4" />
-                                </div>
-                                <span className="text-gray-300 text-sm leading-relaxed pt-1">
+                            <li className="flex items-center gap-3">
+                                <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
+                                <span className="text-gray-300 text-sm">
                                     info@eyehospital.com
                                 </span>
                             </li>
 
-                            <li className="flex items-start gap-3">
-                                <div className="w-8 h-8 rounded-full bg-cyan-950/70 border border-cyan-800/40 flex items-center justify-center text-cyan-400 shrink-0 mt-0.5">
-                                    <MapPin className="w-4 h-4" />
-                                </div>
-                                <span className="text-gray-300 text-sm leading-relaxed pt-1">
+                            <li className="flex items-center gap-3">
+                                <MapPin className="w-4 h-4 text-cyan-400 shrink-0" />
+                                <span className="text-gray-300 text-sm">
                                     Dhanmondi, Dhaka 1209
                                 </span>
                             </li>
