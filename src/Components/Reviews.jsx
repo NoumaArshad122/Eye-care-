@@ -58,11 +58,11 @@ export default function PatientStories() {
     ];
 
     return (
-        <section id="patient-stories" className="w-full bg-[#f0f7fb] py-12 md:py-16 scroll-mt-16">
+        <section id="patient-stories" className="w-full bg-[#f0f7fb] py-8 sm:py-12 md:py-16 scroll-mt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 md:mb-10 gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
                     <div>
                         <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-600 font-bold block">
                             PATIENT STORIES
@@ -81,27 +81,27 @@ export default function PatientStories() {
                             type="button"
                             onClick={prevReview}
                             aria-label="Previous review"
-                            className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
+                            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
                         >
-                            <ChevronLeft className="w-5 h-5" />
+                            <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
                         </button>
                         <button
                             type="button"
                             onClick={nextReview}
                             aria-label="Next review"
-                            className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
+                            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
                         >
-                            <ChevronRight className="w-5 h-5" />
+                            <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
                         </button>
                     </div>
                 </div>
 
                 {/* 3 Testimonial Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                     {visibleReviews.map((review) => (
                         <div
                             key={review.id}
-                            className="bg-white rounded-2xl p-6 sm:p-7 md:p-8 shadow-sm border border-cyan-100/60 flex flex-col justify-between hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                            className="bg-white rounded-2xl p-5 sm:p-7 md:p-8 shadow-sm border border-cyan-100/60 flex flex-col justify-between hover:shadow-md transition-all duration-300 hover:-translate-y-1"
                         >
                             {/* Quote Icon & Text */}
                             <div>

@@ -27,7 +27,7 @@ export default function AdvancedTechnology() {
     ];
 
     return (
-        <section id="gallery" className="relative w-full bg-white py-12 md:py-16 overflow-hidden scroll-mt-16">
+        <section id="gallery" className="relative w-full bg-white py-8 sm:py-12 md:py-16 overflow-hidden scroll-mt-16">
             {/* Top Area: Text & Full-Bleed Right Image */}
             <div className="relative w-full">
                 {/* Desktop Full-Bleed Image: touches right edge of screen with zero margin */}
@@ -42,7 +42,7 @@ export default function AdvancedTechnology() {
                 {/* Left Content Container (matches max-w-7xl alignment) */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Mobile & Tablet Image: At top for mobile */}
-                    <div className="block lg:hidden mb-6 w-full h-[240px] sm:h-[320px] overflow-hidden rounded-2xl shadow-md">
+                    <div className="block lg:hidden mb-5 w-full h-[220px] sm:h-[300px] overflow-hidden rounded-2xl shadow-md">
                         <img
                             src={techImage}
                             alt="Advanced Eye Technology Equipment"
@@ -50,12 +50,12 @@ export default function AdvancedTechnology() {
                         />
                     </div>
 
-                    <div className="w-full lg:w-[45%] xl:w-[43%] min-h-[380px] lg:min-h-[420px] flex flex-col justify-center space-y-4 md:space-y-5 py-4">
+                    <div className="w-full lg:w-[45%] xl:w-[43%] min-h-0 lg:min-h-[420px] flex flex-col justify-center space-y-3 sm:space-y-4 md:space-y-5 py-2 sm:py-4">
                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-cyan-600 block">
                             OUR TECHNOLOGY
                         </span>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#002b40] leading-[1.15] tracking-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#002b40] leading-[1.15] tracking-tight">
                             Advanced Technology <br />
                             for Better Results
                         </h2>
@@ -67,7 +67,7 @@ export default function AdvancedTechnology() {
                         <div className="pt-2">
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-2.5 rounded-full bg-[#002b40] hover:bg-[#003854] text-white px-7 py-3 text-sm font-semibold shadow transition-all duration-200"
+                                className="inline-flex items-center gap-2 rounded-full bg-[#002b40] hover:bg-[#003854] text-white px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold shadow transition-all duration-200"
                             >
                                 <span>Explore Our Technology</span>
                                 <span className="text-base font-normal">→</span>
@@ -78,8 +78,8 @@ export default function AdvancedTechnology() {
             </div>
 
             {/* Bottom 4 Feature Items */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 md:mt-14">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-10 md:mt-14">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-10">
                     {techCards.map((card, index) => (
                         <div key={index} className="flex flex-col items-start">
                             <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-500 mb-3">

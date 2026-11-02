@@ -3,26 +3,26 @@ import Reception from "../assets/reception.png";
 
 export default function Aboutus() {
     return (
-        <section id="about" className="py-10 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <section id="about" className="py-8 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
 
                 <div className="relative">
-                    <div className="w-full h-[320px] sm:h-[380px] md:h-[440px] overflow-hidden rounded-none shadow-md">
+                    <div className="w-full h-[240px] sm:h-[320px] md:h-[420px] overflow-hidden rounded-2xl md:rounded-none shadow-md">
                         <img
                             src={Reception}
                             alt="Hospital Reception"
-                            className="w-full h-full object-cover rounded-none"
+                            className="w-full h-full object-cover"
                         />
                     </div>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
 
                     <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-600 font-bold">
                         ABOUT US
                     </span>
 
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
                         World-Class Eye Care <br /> Under One Roof
                     </h2>
 
@@ -30,24 +30,23 @@ export default function Aboutus() {
                         EyeHospital.com is a modern eye care center dedicated to providing comprehensive and compassionate care. We combine advanced technology with expert medical knowledge to ensure the best possible outcomes for your vision and eye health.
                     </p>
 
-
-                    <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+                    <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-gray-100">
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">10+</h3>
-                            <p className="text-xs md:text-sm text-gray-500 mt-1">Years of Excellence</p>
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">10+</h3>
+                            <p className="text-[11px] sm:text-xs md:text-sm text-gray-500 mt-1">Years Excellence</p>
                         </div>
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">50K+</h3>
-                            <p className="text-xs md:text-sm text-gray-500 mt-1">Happy Patients</p>
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">50K+</h3>
+                            <p className="text-[11px] sm:text-xs md:text-sm text-gray-500 mt-1">Happy Patients</p>
                         </div>
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">15+</h3>
-                            <p className="text-xs md:text-sm text-gray-500 mt-1">Specialist Doctors</p>
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">15+</h3>
+                            <p className="text-[11px] sm:text-xs md:text-sm text-gray-500 mt-1">Specialists</p>
                         </div>
                     </div>
 
-                    <div className="pt-4">
-                        <button className="bg-[#00c6b7] hover:bg-[#00b5a8] text-white font-semibold px-6 py-3 rounded-4xl shadow-md transition flex items-center space-x-2 cursor-pointer">
+                    <div className="pt-2">
+                        <button className="bg-[#00c6b7] hover:bg-[#00b5a8] text-white font-semibold px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base rounded-full shadow-md transition-all inline-flex items-center gap-2 cursor-pointer">
                             <span>Know More About Us</span>
                             <span>→</span>
                         </button>

@@ -4,7 +4,7 @@ import buildingImg from '../assets/hospiral.png';
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative w-full bg-white py-14 md:py-20 overflow-hidden scroll-mt-16">
+        <section id="contact" className="relative w-full bg-white py-8 sm:py-12 md:py-16 overflow-hidden scroll-mt-16">
             {/* Desktop Full-Bleed Hospital Building Image */}
             <div className="hidden lg:block absolute inset-y-0 right-0 w-[52%] lg:w-[54%] xl:w-[55%] overflow-hidden [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)]">
                 <img
@@ -18,7 +18,7 @@ export default function Contact() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Mobile / Tablet Image: At top for mobile */}
-                <div className="block lg:hidden mb-8 w-full h-[240px] sm:h-[320px] overflow-hidden rounded-2xl shadow-md">
+                <div className="block lg:hidden mb-5 w-full h-[220px] sm:h-[300px] overflow-hidden rounded-2xl shadow-md">
                     <img
                         src={buildingImg}
                         alt="Eye Hospital Building"
@@ -26,14 +26,14 @@ export default function Contact() {
                     />
                 </div>
 
-                <div className="w-full lg:w-[45%] xl:w-[43%] min-h-[380px] lg:min-h-[440px] flex flex-col justify-center space-y-6">
+                <div className="w-full lg:w-[45%] xl:w-[43%] min-h-0 lg:min-h-[440px] flex flex-col justify-center space-y-4 sm:space-y-6">
 
                     {/* Header */}
-                    <div className="space-y-2">
+                    <div className="space-y-1.5 sm:space-y-2">
                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-cyan-600 block">
                             GET IN TOUCH
                         </span>
-                        <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#002b40] leading-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#002b40] leading-tight">
                             We're Here to Help
                         </h2>
                         <p className="text-gray-500 text-sm sm:text-base leading-relaxed pt-1 max-w-md">
@@ -42,7 +42,7 @@ export default function Contact() {
                     </div>
 
                     {/* Contact Details List */}
-                    <div className="space-y-5 pt-2">
+                    <div className="space-y-3.5 sm:space-y-5 pt-1 sm:pt-2">
                         {/* Phone */}
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-500 shrink-0">

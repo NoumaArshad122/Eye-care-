@@ -36,13 +36,13 @@ export default function Services() {
     ];
 
     return (
-        <section id="services" className="py-10 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="services" className="py-8 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
             {/* Section Header */}
-            <div className="mb-8 md:mb-10">
+            <div className="mb-6 sm:mb-8 md:mb-10">
                 <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-600 font-bold">
                     OUR SERVICES
                 </span>
-                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2 leading-tight">
+                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mt-1.5 leading-tight">
                     Comprehensive Eye Care Services
                 </h2>
                 <p className="text-gray-600 mt-2 max-w-xl text-sm md:text-base leading-relaxed">
@@ -51,7 +51,7 @@ export default function Services() {
             </div>
 
             {/* Service Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {servicesData.map((service, index) => (
                     <div
                         key={index}

@@ -30,14 +30,14 @@ export default function Doctors() {
     ];
 
     return (
-        <section id="doctors" className="py-10 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="doctors" className="py-8 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
 
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-10 gap-4">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
                 <div>
-                    <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
                         Our Expert Doctors
                     </h2>
-                    <p className="text-gray-500 text-sm md:text-base mt-2 max-w-xl leading-relaxed">
+                    <p className="text-gray-500 text-sm md:text-base mt-1.5 max-w-xl leading-relaxed">
                         Meet our team of highly qualified and experienced eye specialists who are dedicated to your vision and eye health.
                     </p>
                 </div>
@@ -54,14 +54,14 @@ export default function Doctors() {
             </div>
 
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {doctorsData.map((doctor, index) => (
                     <div
                         key={index}
                         className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                     >
 
-                        <div className="w-full h-64 bg-slate-50 overflow-hidden">
+                        <div className="w-full h-56 sm:h-64 bg-slate-50 overflow-hidden">
                             <img
                                 src={doctor.image}
                                 alt={doctor.name}

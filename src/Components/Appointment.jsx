@@ -24,7 +24,7 @@ export default function Appointment() {
     return (
         <section
             id="appointment"
-            className="relative w-full bg-[#002b40] py-14 md:py-20 overflow-hidden scroll-mt-16 text-white"
+            className="relative w-full bg-[#002b40] py-10 sm:py-14 md:py-20 overflow-hidden scroll-mt-16 text-white"
         >
             {/* Background Image */}
             <img
@@ -37,15 +37,15 @@ export default function Appointment() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/70 via-[#002b40]/50 to-[#002233]/40 pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
                     {/* Left Column: Heading & Info */}
-                    <div className="lg:col-span-6 space-y-5">
+                    <div className="lg:col-span-6 space-y-4 sm:space-y-5">
                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-cyan-400 block">
                             BOOK AN APPOINTMENT
                         </span>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                             Take the First Step <br />
                             Towards Better Vision
                         </h2>
@@ -58,7 +58,7 @@ export default function Appointment() {
                             <button
                                 type="button"
                                 onClick={() => document.getElementById('appointment-name')?.focus()}
-                                className="inline-flex items-center gap-2 rounded-full bg-[#00c6b7] hover:bg-[#00b3a5] text-white px-7 py-3 text-sm font-bold shadow-lg shadow-cyan-900/40 transition-all duration-200 cursor-pointer"
+                                className="inline-flex items-center gap-2 rounded-full bg-[#00c6b7] hover:bg-[#00b3a5] text-white px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold shadow-lg shadow-cyan-900/40 transition-all duration-200 cursor-pointer"
                             >
                                 <span>Book Appointment</span>
                                 <span className="text-base font-normal">→</span>
@@ -68,9 +68,9 @@ export default function Appointment() {
 
                     {/* Right Column: Appointment Form Card */}
                     <div className="lg:col-span-6 flex justify-center lg:justify-end">
-                        <div className="w-full max-w-lg bg-white rounded-2xl shadow-2xl p-6 sm:p-8 text-gray-900 border border-cyan-900/10">
+                        <div className="w-full max-w-lg bg-white rounded-2xl shadow-2xl p-5 sm:p-7 md:p-8 text-gray-900 border border-cyan-900/10">
 
-                            <h3 className="text-xl sm:text-2xl font-bold text-[#002b40] mb-6">
+                            <h3 className="text-xl sm:text-2xl font-bold text-[#002b40] mb-5 sm:mb-6">
                                 Book Your Appointment
                             </h3>
 

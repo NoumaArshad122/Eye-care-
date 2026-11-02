@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Mobile Image (Clean photo without button for mobile screens) */}
-            <div className="block md:hidden relative w-full h-[240px] sm:h-[300px] overflow-hidden">
+            <div className="block md:hidden relative w-full h-[220px] sm:h-[280px] overflow-hidden">
                 <img
                     src={doctorPatientImg}
                     alt="Doctor checking patient"
@@ -35,8 +35,8 @@ export default function WhyChooseUs() {
             </div>
 
 
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-                <div className="w-full md:w-[48%] lg:w-[45%] space-y-5">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14">
+                <div className="w-full md:w-[48%] lg:w-[45%] space-y-4 sm:space-y-5">
                     <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-600 font-bold">
                         WHY CHOOSE US
                     </span>
@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
                     </h2>
 
 
-                    <ul className="space-y-3.5 pt-1">
+                    <ul className="space-y-3 sm:space-y-3.5 pt-1">
                         {benefitsList.map((item, index) => (
                             <li key={index} className="flex items-center space-x-3">
                                 <div className="w-5 h-5 rounded-full bg-cyan-500 flex items-center justify-center shrink-0">
@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
                     <div className="pt-2">
                         <a
                             href="#contact"
-                            className="inline-flex items-center gap-2 rounded-full bg-[#0b2b4c] hover:bg-[#123e6b] text-white px-7 py-2.5 text-sm font-semibold shadow-md transition"
+                            className="inline-flex items-center gap-2 rounded-full bg-[#0b2b4c] hover:bg-[#123e6b] text-white px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold shadow-md transition-all"
                         >
                             <span>Our Facilities</span>
                             <span>→</span>

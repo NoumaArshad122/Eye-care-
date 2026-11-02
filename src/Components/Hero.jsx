@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] w-full items-center overflow-hidden bg-[#002b40] py-12 sm:py-16 md:py-20"
+      className="relative flex min-h-[440px] sm:min-h-[500px] lg:min-h-[560px] w-full items-center overflow-hidden bg-[#002b40] py-10 sm:py-14 md:py-20"
     >
       {/* Background Image */}
       <img
@@ -37,13 +37,14 @@ export default function Hero() {
         <div className="mt-5 flex flex-wrap gap-3">
           <a
             href="#appointment"
-            className="rounded-full bg-[#00c6b7] px-7 py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-[#00b5a8]"
+            className="rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-2 shadow-sm"
           >
-            Book Appointment <span className="ml-2">→</span>
+            <span>Book Appointment</span>
+            <span>→</span>
           </a>
           <a
             href="#about"
-            className="rounded-full border border-cyan-400 px-7 py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-white hover:text-gray-900"
+            className="rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
           >
             Learn More
           </a>
