@@ -27,13 +27,21 @@ export default function AdvancedTechnology() {
     ];
 
     return (
-        <section id="technology" className="w-full bg-white py-12 md:py-16 scroll-mt-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Top Grid: Content & Diagonal Image */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <section id="technology" className="relative w-full bg-white py-12 md:py-16 overflow-hidden scroll-mt-16">
+            {/* Top Area: Text & Full-Bleed Right Image */}
+            <div className="relative w-full">
+                {/* Desktop Full-Bleed Image: touches right edge of screen with zero margin */}
+                <div className="hidden lg:block absolute inset-y-0 right-0 w-[52%] lg:w-[54%] xl:w-[55%] overflow-hidden [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)]">
+                    <img
+                        src={techImage}
+                        alt="Advanced Eye Technology Equipment"
+                        className="w-full h-full object-cover object-center"
+                    />
+                </div>
 
-                    {/* Left Column: Heading & Description */}
-                    <div className="lg:col-span-5 space-y-4 md:space-y-5">
+                {/* Left Content Container (matches max-w-7xl alignment) */}
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="w-full lg:w-[45%] xl:w-[43%] min-h-[380px] lg:min-h-[420px] flex flex-col justify-center space-y-4 md:space-y-5 py-4">
                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-cyan-600 block">
                             OUR TECHNOLOGY
                         </span>
@@ -58,21 +66,20 @@ export default function AdvancedTechnology() {
                         </div>
                     </div>
 
-                    {/* Right Column: Slanted Technology Image */}
-                    <div className="lg:col-span-7">
-                        <div className="relative w-full h-[280px] sm:h-[340px] md:h-[390px] lg:h-[420px] overflow-hidden rounded-2xl lg:rounded-none lg:[clip-path:polygon(16%_0,100%_0,100%_100%,0%_100%)]">
-                            <img
-                                src={techImage}
-                                alt="Advanced Eye Technology Equipment"
-                                className="w-full h-full object-cover object-center"
-                            />
-                        </div>
+                    {/* Mobile & Tablet Image */}
+                    <div className="block lg:hidden mt-6 mb-8 w-full h-[260px] sm:h-[320px] overflow-hidden rounded-2xl shadow-md">
+                        <img
+                            src={techImage}
+                            alt="Advanced Eye Technology Equipment"
+                            className="w-full h-full object-cover object-center"
+                        />
                     </div>
-
                 </div>
+            </div>
 
-                {/* Bottom 4 Feature Items */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mt-12 md:mt-16">
+            {/* Bottom 4 Feature Items */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 md:mt-14">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
                     {techCards.map((card, index) => (
                         <div key={index} className="flex flex-col items-start">
                             <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-500 mb-3">
