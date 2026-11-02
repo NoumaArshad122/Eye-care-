@@ -14,8 +14,18 @@ export default function Contact() {
                 />
             </div>
 
-            {/* Left Content Container (standard max-w-7xl alignment) */}
+            {/* Content Container (standard max-w-7xl alignment) */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                {/* Mobile / Tablet Image: At top for mobile */}
+                <div className="block lg:hidden mb-8 w-full h-[240px] sm:h-[320px] overflow-hidden rounded-2xl shadow-md">
+                    <img
+                        src={buildingImg}
+                        alt="Eye Hospital Building"
+                        className="w-full h-full object-cover object-center"
+                    />
+                </div>
+
                 <div className="w-full lg:w-[45%] xl:w-[43%] min-h-[380px] lg:min-h-[440px] flex flex-col justify-center space-y-6">
 
                     {/* Header */}
@@ -80,15 +90,6 @@ export default function Contact() {
                         </div>
                     </div>
 
-                </div>
-
-                {/* Mobile / Tablet Image */}
-                <div className="block lg:hidden mt-8 w-full h-[260px] sm:h-[340px] overflow-hidden rounded-2xl shadow-md">
-                    <img
-                        src={buildingImg}
-                        alt="Eye Hospital Building"
-                        className="w-full h-full object-cover object-center"
-                    />
                 </div>
             </div>
         </section>
