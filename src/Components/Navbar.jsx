@@ -56,7 +56,7 @@ function Navbar() {
         {/* Desktop Action Button */}
         <div className="hidden md:block">
           <a
-            href="#contact"
+            href="#appointment"
             className="rounded-full bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700"
           >
             Book Appointment
@@ -95,7 +95,7 @@ function Navbar() {
           {/* Mobile Action Button */}
           <div className="mt-4 pt-3 border-t border-gray-100">
             <a
-              href="#contact"
+              href="#appointment"
               onClick={closeMenu}
               className="block w-full rounded-full bg-teal-600 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-700 transition"
             >

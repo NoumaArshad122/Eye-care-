@@ -36,7 +36,7 @@ export default function Hero() {
 
         <div className="mt-5 flex flex-wrap gap-3">
           <a
-            href="#contact"
+            href="#appointment"
             className="rounded-full bg-[#00c6b7] px-7 py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-[#00b5a8]"
           >
             Book Appointment <span className="ml-2">→</span>
