@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, ChevronDown, CheckCircle } from 'lucide-react';
+import appBgImg from '../assets/appbgimg.png';
 
 export default function Appointment() {
     const [submitted, setSubmitted] = useState(false);
@@ -23,13 +24,17 @@ export default function Appointment() {
     return (
         <section
             id="appointment"
-            className="relative w-full bg-gradient-to-br from-[#00293d] via-[#003952] to-[#004866] py-14 md:py-20 overflow-hidden scroll-mt-16 text-white"
+            className="relative w-full bg-[#002b40] py-14 md:py-20 overflow-hidden scroll-mt-16 text-white"
         >
-            {/* Ocular / Diagnostic Tech Circles Watermark */}
-            <div className="absolute left-[38%] top-1/2 -translate-y-1/2 -translate-x-1/2 w-[540px] h-[540px] rounded-full border border-cyan-400/10 pointer-events-none hidden md:block" />
-            <div className="absolute left-[38%] top-1/2 -translate-y-1/2 -translate-x-1/2 w-[380px] h-[380px] rounded-full border border-cyan-400/15 pointer-events-none hidden md:block" />
-            <div className="absolute left-[38%] top-1/2 -translate-y-1/2 -translate-x-1/2 w-[220px] h-[220px] rounded-full border border-cyan-400/20 pointer-events-none hidden md:block" />
-            <div className="absolute left-[38%] top-1/2 -translate-y-1/2 -translate-x-1/2 w-[90px] h-[90px] rounded-full border border-cyan-400/25 pointer-events-none hidden md:block" />
+            {/* Background Image */}
+            <img
+                src={appBgImg}
+                alt="Appointment Section Background"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+            />
+
+            {/* Subtle Gradient Overlay for High Contrast */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/70 via-[#002b40]/50 to-[#002233]/40 pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -184,3 +189,4 @@ export default function Appointment() {
         </section>
     );
 }
+
