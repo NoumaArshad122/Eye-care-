@@ -58,7 +58,7 @@ export default function PatientStories() {
     ];
 
     return (
-        <section id="patient-stories" className="w-full bg-[#f0f7fb] py-8 sm:py-12 md:py-16 scroll-mt-16">
+        <section id="patient-stories" className="w-full bg-[#f0f7fb] py-6 sm:py-8 md:py-10 lg:py-14 scroll-mt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}

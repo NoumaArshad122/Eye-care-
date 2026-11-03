@@ -4,7 +4,7 @@ import buildingImg from '../assets/hospiral.webp';
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative w-full bg-white py-8 sm:py-12 md:py-16 overflow-hidden scroll-mt-16">
+        <section id="contact" className="relative w-full bg-white py-6 sm:py-8 md:py-10 lg:py-14 overflow-hidden scroll-mt-16">
             {/* Desktop Full-Bleed Hospital Building Image */}
             <div className="hidden lg:block absolute inset-y-0 right-0 w-[52%] lg:w-[54%] xl:w-[55%] overflow-hidden [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)]">
                 <img
@@ -20,7 +20,7 @@ export default function Contact() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Mobile / Tablet Image: At top for mobile */}
-                <div className="block lg:hidden mb-5 w-full h-[220px] sm:h-[300px] overflow-hidden rounded-2xl shadow-md">
+                <div className="block lg:hidden mb-5 sm:mb-6 w-full h-[220px] sm:h-[320px] md:h-[380px] overflow-hidden rounded-2xl shadow-md max-w-3xl mx-auto">
                     <img
                         src={buildingImg}
                         alt="Eye Hospital Building"

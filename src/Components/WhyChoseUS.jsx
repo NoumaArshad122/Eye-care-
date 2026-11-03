@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
             </div>
 
 
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-14">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10 lg:py-12">
                 <div className="w-full md:w-[48%] lg:w-[45%] space-y-4 sm:space-y-5">
                     <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-600 font-bold">
                         WHY CHOOSE US

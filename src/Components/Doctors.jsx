@@ -30,7 +30,7 @@ export default function Doctors() {
     ];
 
     return (
-        <section id="doctors" className="py-8 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="doctors" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
 
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
                 <div>

@@ -27,7 +27,7 @@ export default function AdvancedTechnology() {
     ];
 
     return (
-        <section id="gallery" className="relative w-full bg-white py-8 sm:py-12 md:py-16 overflow-hidden scroll-mt-16">
+        <section id="gallery" className="relative w-full bg-white py-6 sm:py-8 md:py-10 lg:py-14 overflow-hidden scroll-mt-16">
             {/* Top Area: Text & Full-Bleed Right Image */}
             <div className="relative w-full">
                 {/* Desktop Full-Bleed Image: touches right edge of screen with zero margin */}
@@ -44,7 +44,7 @@ export default function AdvancedTechnology() {
                 {/* Left Content Container (matches max-w-7xl alignment) */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Mobile & Tablet Image: At top for mobile */}
-                    <div className="block lg:hidden mb-5 w-full h-[220px] sm:h-[300px] overflow-hidden rounded-2xl shadow-md">
+                    <div className="block lg:hidden mb-5 sm:mb-6 w-full h-[220px] sm:h-[320px] md:h-[380px] overflow-hidden rounded-2xl shadow-md max-w-3xl mx-auto">
                         <img
                             src={techImage}
                             alt="Advanced Eye Technology Equipment"
@@ -82,7 +82,7 @@ export default function AdvancedTechnology() {
             </div>
 
             {/* Bottom 4 Feature Items */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-10 md:mt-14">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-10">
                     {techCards.map((card, index) => (
                         <div key={index} className="flex flex-col items-start">

@@ -36,7 +36,7 @@ export default function Services() {
     ];
 
     return (
-        <section id="services" className="py-8 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="services" className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
             {/* Section Header */}
             <div className="mb-6 sm:mb-8 md:mb-10">
                 <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-600 font-bold">

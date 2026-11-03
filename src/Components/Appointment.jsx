@@ -24,7 +24,7 @@ export default function Appointment() {
     return (
         <section
             id="appointment"
-            className="relative w-full bg-[#002b40] py-10 sm:py-14 md:py-20 overflow-hidden scroll-mt-16 text-white"
+            className="relative w-full bg-[#002b40] py-8 sm:py-10 md:py-12 lg:py-16 overflow-hidden scroll-mt-16 text-white"
         >
             {/* Background Image */}
             <img

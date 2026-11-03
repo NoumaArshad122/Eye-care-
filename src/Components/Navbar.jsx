@@ -24,29 +24,29 @@ function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6 lg:px-8">
 
-        <a href="#home" className="flex items-center gap-2">
+        <a href="#home" className="flex items-center gap-2 shrink-0">
           <img
             src={logo}
             alt="Eye Hospital logo"
             loading="eager"
             decoding="async"
-            className="h-9 w-auto object-contain sm:h-10"
+            className="h-8 w-auto object-contain sm:h-9 lg:h-10"
           />
-          <h2 className="text-lg font-bold text-gray-900 sm:text-xl">
+          <h2 className="text-base font-bold text-gray-900 sm:text-lg lg:text-xl">
             Eye<span className="text-teal-600">Hospital</span>.com
           </h2>
         </a>
 
         {/* Desktop / Tablet Navigation Links */}
         <nav className="hidden md:flex">
-          <ul className="flex items-center gap-6 lg:gap-8 font-medium text-gray-700">
+          <ul className="flex items-center gap-3.5 lg:gap-7 xl:gap-8 text-xs lg:text-sm xl:text-base font-medium text-gray-700">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="transition-colors hover:text-teal-600"
+                  className="transition-colors hover:text-teal-600 whitespace-nowrap"
                 >
                   {link.name}
                 </a>
@@ -55,11 +55,11 @@ function Navbar() {
           </ul>
         </nav>
 
-        {/* Desktop Action Button */}
-        <div className="hidden md:block">
+        {/* Desktop / Tablet Action Button */}
+        <div className="hidden md:block shrink-0">
           <a
             href="#appointment"
-            className="rounded-full bg-teal-600 px-5 py-2.5 lg:px-6 lg:py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700"
+            className="whitespace-nowrap shrink-0 inline-flex items-center justify-center rounded-full bg-teal-600 px-3.5 py-1.5 md:text-xs lg:px-5 lg:py-2.5 lg:text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700"
           >
             Book Appointment
           </a>

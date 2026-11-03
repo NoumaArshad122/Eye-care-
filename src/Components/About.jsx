@@ -3,7 +3,7 @@ import Reception from "../assets/reception.webp";
 
 export default function Aboutus() {
     return (
-        <section id="about" className="pt-8 pb-3 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="about" className="pt-8 pb-3 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
 
                 <div className="relative">
