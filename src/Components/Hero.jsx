@@ -15,7 +15,7 @@ export default function Hero() {
         decoding="async"
         width={1280}
         height={720}
-        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[65%] md:opacity-100"
+        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[65%] md:scale-[1.15] md:opacity-100"
       />
 
       {/* Gradient Overlay */}

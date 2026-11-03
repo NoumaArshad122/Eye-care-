@@ -9,8 +9,21 @@ export default function WhyChooseUs() {
             id="why-choose-us"
             className="relative w-full bg-[#f0f7fb] overflow-hidden scroll-mt-16"
         >
-            {/* Single responsive image: in-flow on mobile, absolute angled on md+ */}
-            <div className="w-full h-[220px] sm:h-[280px] md:h-full md:absolute md:inset-y-0 md:right-0 md:w-[52%] lg:w-[55%] md:[clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)] overflow-hidden">
+            {/* Desktop / Tablet Full-Bleed Angled Image */}
+            <div className="hidden md:block absolute inset-y-0 right-0 w-[52%] lg:w-[55%] [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)] overflow-hidden">
+                <img
+                    src={doctorPatientImg}
+                    alt="Doctor checking patient"
+                    loading="lazy"
+                    decoding="async"
+                    width={900}
+                    height={600}
+                    className="w-full h-full object-cover object-right"
+                />
+            </div>
+
+            {/* Mobile Image */}
+            <div className="block md:hidden relative w-full h-[220px] sm:h-[280px] overflow-hidden">
                 <img
                     src={doctorPatientImg}
                     alt="Doctor checking patient"

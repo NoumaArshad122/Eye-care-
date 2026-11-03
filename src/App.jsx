@@ -16,7 +16,7 @@ const Footer = lazy(() => import("./Components/Footer"));
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
       {/* Accessible skip link */}
       <a
         href="#main-content"
