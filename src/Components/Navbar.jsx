@@ -1,26 +1,19 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
+import { NAV_LINKS } from "../data/siteData";
+import Button from "./ui/Button";
 
-function Navbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
   };
-
-  const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Doctors", href: "#doctors" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
-  ];
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
@@ -30,23 +23,24 @@ function Navbar() {
           <img
             src={logo}
             alt="Eye Hospital logo"
-            loading="eager"
             decoding="async"
             className="h-8 w-auto object-contain sm:h-9 lg:h-10"
+            width={40}
+            height={40}
           />
-          <h2 className="text-base font-bold text-gray-900 sm:text-lg lg:text-xl">
-            Eye<span className="text-teal-600">Hospital</span>.com
-          </h2>
+          <span className="text-base font-bold text-gray-900 sm:text-lg lg:text-xl">
+            Eye<span className="text-[#00897b]">Hospital</span>.com
+          </span>
         </a>
 
         {/* Desktop / Tablet Navigation Links */}
-        <nav className="hidden md:flex">
+        <nav className="hidden md:flex" aria-label="Main Navigation">
           <ul className="flex items-center gap-3.5 lg:gap-7 xl:gap-8 text-xs lg:text-sm xl:text-base font-medium text-gray-700">
-            {navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="transition-colors hover:text-teal-600 whitespace-nowrap"
+                  className="transition-colors hover:text-[#00897b] whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
                 >
                   {link.name}
                 </a>
@@ -57,12 +51,9 @@ function Navbar() {
 
         {/* Desktop / Tablet Action Button */}
         <div className="hidden md:block shrink-0">
-          <a
-            href="#appointment"
-            className="whitespace-nowrap shrink-0 inline-flex items-center justify-center rounded-full bg-teal-600 px-3.5 py-1.5 md:text-xs lg:px-5 lg:py-2.5 lg:text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700"
-          >
+          <Button href="#appointment" size="sm" variant="primary">
             Book Appointment
-          </a>
+          </Button>
         </div>
 
         {/* Mobile Hamburger Toggle Button */}
@@ -71,22 +62,24 @@ function Navbar() {
             type="button"
             onClick={toggleMenu}
             aria-label="Toggle navigation menu"
-            className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-teal-600 focus:outline-none"
+            aria-expanded={isOpen}
+            aria-controls="mobile-nav-menu"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-[#00897b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
           </button>
         </div>
       </div>
 
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 z-50 border-t border-gray-100 bg-white px-4 pt-3 pb-6 shadow-xl md:hidden">
+        <div id="mobile-nav-menu" className="absolute top-full left-0 right-0 z-50 border-t border-gray-100 bg-white px-4 pt-3 pb-6 shadow-xl md:hidden">
           <ul className="flex flex-col space-y-3">
-            {navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
                   onClick={closeMenu}
-                  className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                  className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-[#00897b] transition-colors"
                 >
                   {link.name}
                 </a>
@@ -96,18 +89,12 @@ function Navbar() {
 
           {/* Mobile Action Button */}
           <div className="mt-4 pt-3 border-t border-gray-100">
-            <a
-              href="#appointment"
-              onClick={closeMenu}
-              className="block w-full rounded-full bg-teal-600 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-700 transition"
-            >
+            <Button href="#appointment" onClick={closeMenu} size="full" variant="primary" className="text-center">
               Book Appointment
-            </a>
+            </Button>
           </div>
         </div>
       )}
     </header>
   );
 }
-
-export default Navbar;

@@ -1,17 +1,21 @@
+import Button from "./ui/Button";
+
 export default function Hero() {
   return (
     <section
       id="home"
       className="relative flex min-h-[380px] sm:min-h-[420px] md:min-h-[460px] lg:min-h-[520px] w-full items-center overflow-hidden bg-[#002b40] py-6 sm:py-8 md:py-10 lg:py-14"
     >
-      {/* Background Image with LCP Optimization */}
+      {/* Decorative Background Image with LCP Optimization */}
       <img
         src="/hero.webp"
-        alt="Close-up of an eye being examined"
-        fetchpriority="high"
-        loading="eager"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
         decoding="async"
-        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[65%] md:scale-[1.15] md:opacity-100"
+        width={1280}
+        height={720}
+        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[65%] md:opacity-100"
       />
 
       {/* Gradient Overlay */}
@@ -20,7 +24,7 @@ export default function Hero() {
       {/* Content Container */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
         <p className="mb-2 text-[clamp(15px,2vw,22px)] font-semibold text-cyan-300">
-          Clear Vision <span className="px-1">•</span> Better Tomorrow
+          Clear Vision <span className="px-1" aria-hidden="true">•</span> Better Tomorrow
         </p>
 
         <h1 className="text-[clamp(32px,6vw,84px)] font-bold leading-[1.05] tracking-tight">
@@ -36,19 +40,13 @@ export default function Hero() {
         </p>
 
         <div className="mt-5 flex flex-wrap gap-2.5 sm:gap-3">
-          <a
-            href="#appointment"
-            className="whitespace-nowrap rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-1.5 shadow-sm"
-          >
+          <Button href="#appointment" variant="primary">
             <span>Book Appointment</span>
-            <span className="text-sm">→</span>
-          </a>
-          <a
-            href="#about"
-            className="whitespace-nowrap rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
-          >
+            <span className="text-sm ml-1.5" aria-hidden="true">→</span>
+          </Button>
+          <Button href="#about" variant="outline">
             Learn More
-          </a>
+          </Button>
         </div>
       </div>
     </section>

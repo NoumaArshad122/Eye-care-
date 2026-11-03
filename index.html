@@ -3,15 +3,65 @@
 
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EyeHospital.com | Comprehensive Eye Care, LASIK & Cataract Surgery</title>
+
+    <meta
+      name="description"
+      content="Leading modern eye hospital offering advanced LASIK, safe cataract surgery, glaucoma treatment, and pediatric eye care with world-class specialists and technology."
+    />
+    <meta name="theme-color" content="#002b40" />
+    <link rel="canonical" href="https://eyehospital.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eyehospital.com/" />
+    <meta property="og:title" content="EyeHospital.com | Comprehensive Eye Care, LASIK & Cataract Surgery" />
+    <meta
+      property="og:description"
+      content="Leading modern eye hospital offering advanced LASIK, safe cataract surgery, glaucoma treatment, and pediatric eye care with world-class specialists."
+    />
+    <meta property="og:image" content="https://eyehospital.com/hero.webp" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://eyehospital.com/" />
+    <meta name="twitter:title" content="EyeHospital.com | Comprehensive Eye Care, LASIK & Cataract Surgery" />
+    <meta
+      name="twitter:description"
+      content="Leading modern eye hospital offering advanced LASIK, safe cataract surgery, glaucoma treatment, and pediatric eye care with world-class specialists."
+    />
+    <meta name="twitter:image" content="https://eyehospital.com/hero.webp" />
+
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="preload" as="image" href="/hero.webp" type="image/webp" fetchpriority="high" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eye Hospital</title>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "EyeHospital.com",
+        "image": "https://eyehospital.com/hero.webp",
+        "telephone": "+880 1234 567890",
+        "email": "info@eyehospital.com",
+        "url": "https://eyehospital.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "House #12, Road #5, Dhanmondi",
+          "addressLocality": "Dhaka",
+          "postalCode": "1209",
+          "addressCountry": "BD"
+        },
+        "medicalSpecialty": "Ophthalmology",
+        "priceRange": "$$"
+      }
+    </script>
   </head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 
 </html>
