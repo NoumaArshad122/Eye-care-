@@ -3,7 +3,7 @@ import Reception from "../assets/reception.webp";
 
 export default function Aboutus() {
     return (
-        <section id="about" className="py-8 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="about" className="pt-8 pb-3 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
 
                 <div className="relative">
@@ -48,7 +48,7 @@ export default function Aboutus() {
                     </div>
 
                     <div className="pt-2">
-                        <button className="bg-[#00c6b7] hover:bg-[#00b5a8] text-white font-semibold px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base rounded-full shadow-md transition-all inline-flex items-center gap-1.5 cursor-pointer">
+                        <button className="bg-[#00c6b7] hover:bg-[#00b5a8] text-white font-semibold px-5 py-3 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-sm md:text-base rounded-full shadow-md transition-all inline-flex items-center gap-1.5 cursor-pointer">
                             <span>Know More About Us</span>
                             <span>→</span>
                         </button>
