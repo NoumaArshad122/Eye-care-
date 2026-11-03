@@ -7,7 +7,7 @@ export default function Aboutus() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
 
                 <div className="relative">
-                    <div className="w-full h-[240px] sm:h-[320px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-2xl shadow-md">
+                    <div className="w-full h-[240px] sm:h-[320px] md:h-[400px] lg:h-[450px] overflow-hidden shadow-md">
                         <img
                             src={Reception}
                             alt="Hospital Reception"

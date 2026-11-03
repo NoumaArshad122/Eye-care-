@@ -58,7 +58,7 @@ export default function Doctors() {
                 {doctorsData.map((doctor, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
+                        className="bg-white overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                     >
 
                         <div className="w-full h-56 sm:h-64 bg-slate-50 overflow-hidden">

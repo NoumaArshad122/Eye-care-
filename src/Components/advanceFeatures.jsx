@@ -44,7 +44,7 @@ export default function AdvancedTechnology() {
                 {/* Left Content Container (matches max-w-7xl alignment) */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Mobile & Tablet Image: At top for mobile */}
-                    <div className="block lg:hidden mb-5 sm:mb-6 w-full h-[220px] sm:h-[320px] md:h-[380px] overflow-hidden rounded-2xl shadow-md max-w-3xl mx-auto">
+                    <div className="block lg:hidden mb-5 sm:mb-6 w-full h-[220px] sm:h-[320px] md:h-[380px] overflow-hidden shadow-md max-w-3xl mx-auto">
                         <img
                             src={techImage}
                             alt="Advanced Eye Technology Equipment"
