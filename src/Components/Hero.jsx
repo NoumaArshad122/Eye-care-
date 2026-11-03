@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[440px] sm:min-h-[500px] lg:min-h-[560px] w-full items-center overflow-hidden bg-[#002b40] py-5 sm:py-10 md:py-20"
+      className="relative flex min-h-[380px] sm:min-h-[420px] md:min-h-[460px] lg:min-h-[520px] w-full items-center overflow-hidden bg-[#002b40] py-6 sm:py-8 md:py-10 lg:py-14"
     >
       {/* Background Image with LCP Optimization */}
       <img
@@ -15,7 +15,7 @@ export default function Hero() {
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#002b40] via-[#002b40]/85 to-[#002b40]/40 md:via-[#002b40]/55 md:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#002b40] via-[#002b40]/90 to-[#002b40]/50 md:via-[#002b40]/75 md:to-transparent" />
 
       {/* Content Container */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
@@ -23,7 +23,7 @@ export default function Hero() {
           Clear Vision <span className="px-1">•</span> Better Tomorrow
         </p>
 
-        <h1 className="text-[clamp(36px,7.5vw,84px)] font-bold leading-[1.04] tracking-tight">
+        <h1 className="text-[clamp(32px,6vw,84px)] font-bold leading-[1.05] tracking-tight">
           Your Vision
           <br />
           <span className="text-cyan-400">Our Priority</span>
@@ -38,14 +38,14 @@ export default function Hero() {
         <div className="mt-5 flex flex-wrap gap-2.5 sm:gap-3">
           <a
             href="#appointment"
-            className="rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-1.5 shadow-sm"
+            className="whitespace-nowrap rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-1.5 shadow-sm"
           >
             <span>Book Appointment</span>
             <span className="text-sm">→</span>
           </a>
           <a
             href="#about"
-            className="rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
+            className="whitespace-nowrap rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
           >
             Learn More
           </a>
