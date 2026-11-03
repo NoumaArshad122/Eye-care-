@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[380px] sm:min-h-[420px] md:min-h-[450px] lg:min-h-[480px] w-full items-center overflow-hidden bg-[#002b40] py-5 sm:py-7 md:py-10 lg:py-12"
+      className="relative flex min-h-[440px] sm:min-h-[500px] lg:min-h-[560px] w-full items-center overflow-hidden bg-[#002b40] py-5 sm:py-10 md:py-20"
     >
       {/* Background Image with LCP Optimization */}
       <img
@@ -38,14 +38,14 @@ export default function Hero() {
         <div className="mt-5 flex flex-wrap gap-2.5 sm:gap-3">
           <a
             href="#appointment"
-            className="rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-1.5 shadow-sm"
+            className="rounded-full bg-[#00c6b7] hover:bg-[#00b5a8] px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center gap-1.5 shadow-sm"
           >
             <span>Book Appointment</span>
             <span className="text-sm">→</span>
           </a>
           <a
             href="#about"
-            className="rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
+            className="rounded-full border border-cyan-400 hover:bg-white hover:text-gray-900 px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold text-white transition-all inline-flex items-center justify-center"
           >
             Learn More
           </a>

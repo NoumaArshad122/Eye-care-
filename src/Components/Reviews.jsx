@@ -81,7 +81,7 @@ export default function PatientStories() {
                             type="button"
                             onClick={prevReview}
                             aria-label="Previous review"
-                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
+                            className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
                         >
                             <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
                         </button>
@@ -89,7 +89,7 @@ export default function PatientStories() {
                             type="button"
                             onClick={nextReview}
                             aria-label="Next review"
-                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
+                            className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-cyan-600 hover:border-cyan-400 hover:shadow transition-all cursor-pointer"
                         >
                             <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
                         </button>

@@ -59,7 +59,7 @@ function Navbar() {
         <div className="hidden md:block">
           <a
             href="#appointment"
-            className="rounded-full bg-teal-600 px-4 py-2 lg:px-5 lg:py-2.5 text-xs lg:text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700"
+            className="rounded-full bg-teal-600 px-5 py-2.5 lg:px-6 lg:py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700"
           >
             Book Appointment
           </a>
@@ -99,7 +99,7 @@ function Navbar() {
             <a
               href="#appointment"
               onClick={closeMenu}
-              className="block w-full rounded-full bg-teal-600 py-2.5 text-center text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-teal-700 transition"
+              className="block w-full rounded-full bg-teal-600 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-700 transition"
             >
               Book Appointment
             </a>

@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
                     <div className="pt-2">
                         <a
                             href="#contact"
-                            className="inline-flex items-center gap-1.5 rounded-full bg-[#0b2b4c] hover:bg-[#123e6b] text-white px-4.5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-xs sm:text-sm md:text-base font-semibold shadow-md transition-all"
+                            className="inline-flex items-center gap-1.5 rounded-full bg-[#0b2b4c] hover:bg-[#123e6b] text-white px-5 py-3 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-sm sm:text-sm md:text-base font-semibold shadow-md transition-all"
                         >
                             <span>Our Facilities</span>
                             <span>→</span>
