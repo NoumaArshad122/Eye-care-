@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[440px] sm:min-h-[500px] lg:min-h-[560px] w-full items-center overflow-hidden bg-[#002b40] py-10 sm:py-14 md:py-20"
+      className="relative flex min-h-[380px] sm:min-h-[420px] md:min-h-[450px] lg:min-h-[480px] w-full items-center overflow-hidden bg-[#002b40] py-5 sm:py-7 md:py-10 lg:py-12"
     >
       {/* Background Image with LCP Optimization */}
       <img
