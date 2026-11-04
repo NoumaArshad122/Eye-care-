@@ -4,9 +4,9 @@ import { CONTACT } from '../data/siteData';
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative w-full bg-white py-6 sm:py-8 md:py-10 lg:py-14 overflow-hidden scroll-mt-16">
-            {/* Desktop Full-Bleed Hospital Building Image */}
-            <div className="hidden lg:block absolute inset-y-0 right-0 w-[52%] lg:w-[54%] xl:w-[55%] overflow-hidden [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)]">
+        <section id="contact" className="relative w-full bg-white py-2.5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
+            {/* Desktop & Tablet Full-Bleed Hospital Building Image */}
+            <div className="hidden md:block absolute inset-y-0 right-0 w-[50%] lg:w-[54%] xl:w-[55%] overflow-hidden [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)]">
                 <img
                     src={buildingImg}
                     alt="Eye Hospital Building"
@@ -19,10 +19,10 @@ export default function Contact() {
             </div>
 
             {/* Content Container */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 relative z-10">
 
-                {/* Mobile / Tablet Image: At top for mobile */}
-                <div className="block lg:hidden mb-5 sm:mb-6 w-full h-[220px] sm:h-[320px] md:h-[380px] overflow-hidden shadow-md max-w-3xl mx-auto">
+                {/* Mobile Image: Only shown on mobile (< md) */}
+                <div className="block md:hidden mb-4 w-full h-[180px] sm:h-[260px] overflow-hidden shadow-sm">
                     <img
                         src={buildingImg}
                         alt="Eye Hospital Building"
@@ -34,7 +34,7 @@ export default function Contact() {
                     />
                 </div>
 
-                <div className="w-full lg:w-[45%] xl:w-[43%] min-h-0 lg:min-h-[440px] flex flex-col justify-center space-y-4 sm:space-y-6">
+                <div className="w-full md:w-[48%] lg:w-[45%] xl:w-[43%] min-h-0 md:min-h-[400px] lg:min-h-[440px] flex flex-col justify-center space-y-4 sm:space-y-6">
 
                     {/* Header */}
                     <div className="space-y-1.5 sm:space-y-2">
@@ -44,7 +44,7 @@ export default function Contact() {
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#002b40] leading-tight">
                             We're Here to Help
                         </h2>
-                        <p className="text-gray-500 text-sm sm:text-base leading-relaxed pt-1 max-w-md">
+                        <p className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed pt-1 max-w-md">
                             Have a question or need assistance? Contact us directly or visit our clinic. We're always happy to help.
                         </p>
                     </div>

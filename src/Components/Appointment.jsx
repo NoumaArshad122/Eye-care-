@@ -28,7 +28,7 @@ export default function Appointment() {
     return (
         <section
             id="appointment"
-            className="relative w-full bg-[#002b40] py-8 sm:py-10 md:py-12 lg:py-16 overflow-hidden scroll-mt-16 text-white"
+            className="relative w-full bg-[#002b40] py-3 sm:py-10 md:py-12 lg:py-16 overflow-hidden scroll-mt-16 text-white"
         >
             {/* Decorative Background Image */}
             <img
@@ -45,27 +45,28 @@ export default function Appointment() {
             {/* Subtle Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/70 via-[#002b40]/50 to-[#002233]/40 pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
 
                     {/* Left Column: Heading & Info */}
-                    <div className="lg:col-span-6 space-y-4 sm:space-y-5">
+                    <div className="lg:col-span-6 space-y-3 sm:space-y-5">
                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-cyan-300 block">
                             BOOK AN APPOINTMENT
                         </span>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white">
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white">
                             Need Professional <br /> Eye Consultation?
                         </h2>
 
-                        <p className="text-cyan-100/80 text-sm sm:text-base leading-relaxed max-w-lg">
+                        <p className="text-cyan-100/80 text-xs sm:text-sm md:text-base leading-relaxed max-w-lg">
                             Schedule your appointment today and let our experts help you see the world more clearly.
                         </p>
 
-                        <div className="pt-2">
+                        <div className="pt-1.5 sm:pt-2">
                             <Button
                                 onClick={() => document.getElementById('appointment-name')?.focus()}
                                 variant="primary"
+                                className="text-xs sm:text-sm md:text-base px-4 py-2 sm:px-6 sm:py-3"
                             >
                                 <span>Book Appointment</span>
                                 <span className="ml-1.5" aria-hidden="true">→</span>
@@ -75,9 +76,9 @@ export default function Appointment() {
 
                     {/* Right Column: Appointment Form Card */}
                     <div className="lg:col-span-6 flex justify-center lg:justify-end">
-                        <div className="w-full max-w-lg bg-white rounded-2xl shadow-2xl p-5 sm:p-7 md:p-8 text-gray-900 border border-cyan-900/10">
+                        <div className="w-full max-w-lg bg-white rounded-xl sm:rounded-2xl shadow-2xl p-3.5 sm:p-7 md:p-8 text-gray-900 border border-cyan-900/10">
 
-                            <h3 className="text-xl sm:text-2xl font-bold text-[#002b40] mb-5 sm:mb-6">
+                            <h3 className="text-lg sm:text-2xl font-bold text-[#002b40] mb-4 sm:mb-6">
                                 Book Your Appointment
                             </h3>
 
@@ -188,12 +189,13 @@ export default function Appointment() {
 
                                     {/* Submit Button */}
                                     <div className="pt-2">
-                                        <button
+                                        <Button
                                             type="submit"
-                                            className="w-full rounded-lg bg-[#002b40] hover:bg-[#003c59] text-white py-3 sm:py-3.5 px-4 text-sm md:text-base font-semibold shadow-md transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
+                                            variant="dark"
+                                            size="full"
                                         >
                                             Submit Appointment
-                                        </button>
+                                        </Button>
                                     </div>
                                 </form>
                             )}

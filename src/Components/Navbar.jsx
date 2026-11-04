@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 py-1.5 sm:py-2.5">
 
         <a href="#home" className="flex items-center gap-2 shrink-0">
           <img
@@ -35,12 +35,12 @@ export default function Navbar() {
 
         {/* Desktop / Tablet Navigation Links */}
         <nav className="hidden md:flex" aria-label="Main Navigation">
-          <ul className="flex items-center gap-3.5 lg:gap-7 xl:gap-8 text-xs lg:text-sm xl:text-base font-medium text-gray-700">
+          <ul className="flex items-center gap-2 md:gap-3 lg:gap-6 xl:gap-8 text-xs lg:text-sm xl:text-base font-medium text-gray-700">
             {NAV_LINKS.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="transition-colors hover:text-[#00897b] whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded"
+                  className="transition-colors hover:text-[#00897b] whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded px-1 py-0.5"
                 >
                   {link.name}
                 </a>

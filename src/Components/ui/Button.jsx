@@ -18,9 +18,9 @@ export default function Button({
     };
 
     const sizeStyles = {
-        default: "px-5 py-3 sm:px-6 md:px-7 md:py-3.5 text-sm md:text-base",
-        sm: "px-3.5 py-1.5 md:text-xs lg:px-5 lg:py-2.5 lg:text-sm",
-        full: "w-full py-3 sm:py-3.5 px-4 text-sm md:text-base rounded-lg"
+        default: "px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3.5 text-xs sm:text-sm md:text-base min-h-[40px] sm:min-h-[46px]",
+        sm: "px-3.5 py-2 md:px-3 md:py-2 lg:px-5 lg:py-2.5 text-xs lg:text-sm min-h-[36px] lg:min-h-[40px]",
+        full: "w-full py-3 sm:py-3.5 px-4 text-sm md:text-base rounded-lg min-h-[44px]"
     };
 
     const combinedClassName = `${baseStyles} ${variantStyles[variant] || variantStyles.primary} ${sizeStyles[size] || sizeStyles.default} ${className}`.trim();

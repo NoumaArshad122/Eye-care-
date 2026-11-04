@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Mobile Image */}
-            <div className="block md:hidden relative w-full h-[220px] sm:h-[280px] overflow-hidden">
+            <div className="block md:hidden relative w-full h-[180px] sm:h-[260px] overflow-hidden">
                 <img
                     src={doctorPatientImg}
                     alt="Doctor checking patient"
@@ -35,8 +35,8 @@ export default function WhyChooseUs() {
                 />
             </div>
 
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10 lg:py-12 relative z-10">
-                <div className="w-full md:w-[48%] lg:w-[45%] space-y-4 sm:space-y-5">
+            <div className="mx-auto max-w-7xl pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 py-2.5 sm:py-8 md:py-10 lg:py-12 relative z-10">
+                <div className="w-full md:w-[48%] lg:w-[45%] space-y-3.5 sm:space-y-5">
                     <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-700 font-bold">
                         WHY CHOOSE US
                     </span>
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
                                 <div className="w-5 h-5 rounded-full bg-[#00897b] flex items-center justify-center shrink-0">
                                     <Check className="w-3.5 h-3.5 text-white stroke-[3]" aria-hidden="true" />
                                 </div>
-                                <span className="text-gray-700 text-sm md:text-base font-medium">
+                                <span className="text-gray-700 text-xs sm:text-sm md:text-base font-medium">
                                     {item}
                                 </span>
                             </li>
