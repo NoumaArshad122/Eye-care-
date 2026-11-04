@@ -34,6 +34,19 @@ export default function AdvancedTechnology() {
         <section id="technology" className="relative w-full bg-white py-5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
             {/* Top Area: Text & Full-Bleed Right Image */}
             <div className="relative w-full">
+                {/* Mobile Image: Edge-to-edge full width with ZERO side margin and ZERO side padding */}
+                <div className="block md:hidden w-full overflow-hidden mb-4 sm:mb-5">
+                    <img
+                        src={techImage}
+                        alt="Advanced Eye Technology Equipment"
+                        loading="lazy"
+                        decoding="async"
+                        width={1200}
+                        height={675}
+                        className="w-full h-auto object-cover object-center"
+                    />
+                </div>
+
                 {/* Desktop & Tablet Full-Bleed Image: touches right edge of screen with zero margin */}
                 <div className="hidden md:block absolute inset-y-0 right-0 w-[54%] lg:w-[58%] xl:w-[60%] overflow-hidden [clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]">
                     <img
@@ -49,19 +62,6 @@ export default function AdvancedTechnology() {
 
                 {/* Left Content Container (matches max-w-7xl alignment) */}
                 <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
-                    {/* Mobile Image: At top for mobile (< md) */}
-                    <div className="block md:hidden mb-5 w-full overflow-hidden shadow-sm">
-                        <img
-                            src={techImage}
-                            alt="Advanced Eye Technology Equipment"
-                            loading="lazy"
-                            decoding="async"
-                            width={1200}
-                            height={675}
-                            className="w-full h-auto object-cover object-center"
-                        />
-                    </div>
-
                     <div className="w-full md:w-[48%] lg:w-[45%] xl:w-[43%] min-h-0 md:min-h-[380px] lg:min-h-[420px] flex flex-col justify-center space-y-3 sm:space-y-4 md:space-y-5 py-2 sm:py-4">
                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-cyan-700 block">
                             OUR TECHNOLOGY

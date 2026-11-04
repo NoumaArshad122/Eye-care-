@@ -5,6 +5,19 @@ import { CONTACT } from '../data/siteData';
 export default function Contact() {
     return (
         <section id="contact" className="relative w-full bg-white py-5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
+            {/* Mobile Image: Full-width edge-to-edge (0 margin, 0 padding on sides) */}
+            <div className="block md:hidden w-full overflow-hidden mb-5">
+                <img
+                    src={buildingImg}
+                    alt="Eye Hospital Building"
+                    loading="lazy"
+                    decoding="async"
+                    width={1000}
+                    height={600}
+                    className="w-full h-auto object-cover object-center"
+                />
+            </div>
+
             {/* Desktop & Tablet Full-Bleed Hospital Building Image */}
             <div className="hidden md:block absolute inset-y-0 right-0 w-[54%] lg:w-[58%] xl:w-[60%] overflow-hidden [clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]">
                 <img
@@ -20,19 +33,6 @@ export default function Contact() {
 
             {/* Content Container */}
             <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
-
-                {/* Mobile Image: Only shown on mobile (< md) */}
-                <div className="block md:hidden mb-5 w-full overflow-hidden shadow-sm">
-                    <img
-                        src={buildingImg}
-                        alt="Eye Hospital Building"
-                        loading="lazy"
-                        decoding="async"
-                        width={1000}
-                        height={600}
-                        className="w-full h-auto object-cover object-center"
-                    />
-                </div>
 
                 <div className="w-full md:w-[48%] lg:w-[45%] xl:w-[43%] min-h-0 md:min-h-[400px] lg:min-h-[440px] flex flex-col justify-center space-y-4 sm:space-y-6">
 

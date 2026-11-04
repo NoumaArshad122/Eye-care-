@@ -3,22 +3,25 @@ import Button from "./ui/Button";
 
 export default function About() {
     return (
-        <section id="about" className="py-5 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-6 bg-white w-full max-w-[95%] xl:max-w-[1720px] mx-auto scroll-mt-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 md:gap-12 items-center">
+        <section id="about" className="py-5 sm:py-8 md:py-10 lg:py-12 bg-white w-full scroll-mt-16">
+            <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-0 md:px-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 md:gap-12 items-center">
 
-                <div className="w-full overflow-hidden shadow-sm">
-                    <img
-                        src={Reception}
-                        alt="Hospital Reception"
-                        loading="lazy"
-                        decoding="async"
-                        width={1200}
-                        height={537}
-                        className="w-full h-auto object-cover"
-                    />
-                </div>
+                    {/* Reception Image: full-width on mobile (0 side m and p), increased height */}
+                    <div className="w-full h-[250px] sm:h-[300px] md:h-[380px] lg:h-[440px] xl:h-[480px] overflow-hidden shadow-sm">
+                        <img
+                            src={Reception}
+                            alt="Hospital Reception"
+                            loading="lazy"
+                            decoding="async"
+                            width={1200}
+                            height={537}
+                            className="w-full h-full object-cover object-center"
+                        />
+                    </div>
 
-                <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+                    {/* Content: Has px-4 on mobile so text is safely padded */}
+                    <div className="px-4 md:px-0 space-y-3 sm:space-y-4 lg:space-y-6">
 
                     <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-700 font-bold">
                         ABOUT US
@@ -57,6 +60,7 @@ export default function About() {
                 </div>
 
             </div>
-        </section>
-    );
+        </div>
+    </section>
+);
 }

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[500px] sm:min-h-[580px] md:min-h-[640px] lg:min-h-[720px] xl:min-h-[760px] w-full items-center overflow-hidden bg-[#002b40] py-2 sm:py-2.5 md:py-3 lg:py-4"
+      className="relative flex min-h-0 sm:min-h-[480px] md:min-h-[580px] lg:min-h-[660px] xl:min-h-[700px] w-full items-center overflow-hidden bg-[#002b40] py-5 sm:py-8 md:py-10"
     >
       {/* Decorative Background Image with LCP Optimization */}
       <img
@@ -27,7 +27,7 @@ export default function Hero() {
           Clear Vision <span className="px-1" aria-hidden="true">•</span> Better Tomorrow
         </p>
 
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight">
+        <h1 className="text-[24px] sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight">
           Your Vision <br className="hidden sm:block" />
           <span className="text-cyan-400">Our Priority</span>
         </h1>
