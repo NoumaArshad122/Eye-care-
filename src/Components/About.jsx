@@ -6,15 +6,15 @@ export default function About() {
         <section id="about" className="py-5 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-6 bg-white w-full max-w-[95%] xl:max-w-[1720px] mx-auto scroll-mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 md:gap-12 items-center">
 
-                <div className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[420px] overflow-hidden shadow-sm">
+                <div className="w-full overflow-hidden shadow-sm">
                     <img
                         src={Reception}
                         alt="Hospital Reception"
                         loading="lazy"
                         decoding="async"
-                        width={800}
-                        height={450}
-                        className="w-full h-full object-cover"
+                        width={1200}
+                        height={537}
+                        className="w-full h-auto object-cover"
                     />
                 </div>
 

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[320px] sm:min-h-[400px] md:min-h-[460px] lg:min-h-[520px] w-full items-center overflow-hidden bg-[#002b40] py-6 sm:py-8 md:py-10 lg:py-14"
+      className="relative flex min-h-[500px] sm:min-h-[580px] md:min-h-[640px] lg:min-h-[720px] xl:min-h-[760px] w-full items-center overflow-hidden bg-[#002b40] py-2 sm:py-2.5 md:py-3 lg:py-4"
     >
       {/* Decorative Background Image with LCP Optimization */}
       <img
@@ -15,7 +15,7 @@ export default function Hero() {
         decoding="async"
         width={1280}
         height={720}
-        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[65%] md:scale-[1.15] md:opacity-100"
+        className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-40 md:w-[70%] lg:w-[65%] md:opacity-100"
       />
 
       {/* Gradient Overlay */}
