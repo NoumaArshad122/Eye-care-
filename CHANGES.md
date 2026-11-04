@@ -181,6 +181,19 @@
 
 ---
 
+### Phase 11: Reviews میں Swiper.js لائبریری کا نفاذ، آٹو و مینوئل سکرول اور سائیڈ بٹنز (Swiper.js Integration with Auto/Manual Scroll & Side Arrows)
+1. **Swiper.js جدید کیروسل کا نفاذ**:
+   - `Reviews.jsx`: جدید اور ہموار ٹچ سپورٹ والی لائبریری `swiper` اور `swiper/react` کو مربوط کیا گیا (`Autoplay`, `Navigation`, `Pagination`, `A11y` ماڈیولز کے ساتھ)۔
+2. **آٹو اور مینوئل سکرول (Dual Auto & Manual Scroll)**:
+   - **Auto Scroll**: 3.5 سیکنڈ کے وقفے کے ساتھ خودکار ہموار سکرولنگ (`autoplay={{ delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true }}`)، ماؤس اوپر لانے پر رک جاتا ہے اور ہٹانے پر دوبارہ شروع ہو جاتا ہے۔
+   - **Manual Scroll**: موبائل پر ٹچ سوائپ، ڈیسک ٹاپ پر ماؤس ڈریگ (`grabCursor={true}`)، اور نیویگیشن بٹنز کے ذریعے مکمل کنٹرول۔
+3. **سکرول بٹنز بائیں اور دائیں جانب (Side-Positioned Scroll Buttons)**:
+   - سکرول بٹنز (Left & Right Buttons) کو کارڈز کے دائیں اور بائیں جانب پوزیشن کیا گیا تاکہ صارف آسانی سے آگے پیچھے سکرول کر سکے۔
+   - برانڈ کلر `#00897b` کے ساتھ ڈائنامک پیجینیشن بلٹس (Pagination Bullets) بھی شامل کی گئیں۔
+   - رسپانسو بریک پوائنٹس: موبائل پر 1 کارڈ، ٹیبلٹ پر 2 کارڈز، اور ڈیسک ٹاپ پر 3 کارڈز ایک وقت میں نظر آئیں گے۔
+
+---
+
 ## 2. فائل وار تفصیلات (File-by-File Summary Table)
 
 | فائل کا راستہ (File Path) | قسم (Type) | اہم تبدیلیاں (Key Changes) |
