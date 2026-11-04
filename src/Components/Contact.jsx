@@ -19,7 +19,7 @@ export default function Contact() {
             </div>
 
             {/* Content Container */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
 
                 {/* Mobile Image: Only shown on mobile (< md) */}
                 <div className="block md:hidden mb-5 w-full h-[200px] sm:h-[260px] overflow-hidden shadow-sm">

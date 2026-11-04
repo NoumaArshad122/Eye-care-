@@ -13,7 +13,7 @@ const serviceIcons = {
 
 export default function Services() {
     return (
-        <section id="services" className="py-5 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="services" className="py-5 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-6 bg-white w-full max-w-[95%] xl:max-w-[1720px] mx-auto scroll-mt-16">
             {/* Section Header */}
             <div className="mb-5 sm:mb-8 md:mb-10">
                 <SectionHeader

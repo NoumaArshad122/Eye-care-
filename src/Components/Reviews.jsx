@@ -23,7 +23,7 @@ export default function Reviews() {
 
     return (
         <section id="patient-stories" className="w-full bg-[#f0f7fb] py-5 sm:py-8 md:py-10 lg:py-14 scroll-mt-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6">
 
                 {/* Section Header */}
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-5 sm:mb-8 md:mb-10 gap-3 sm:gap-4">

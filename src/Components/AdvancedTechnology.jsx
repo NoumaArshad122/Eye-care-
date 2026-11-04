@@ -48,7 +48,7 @@ export default function AdvancedTechnology() {
                 </div>
 
                 {/* Left Content Container (matches max-w-7xl alignment) */}
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
                     {/* Mobile Image: At top for mobile (< md) */}
                     <div className="block md:hidden mb-5 w-full h-[200px] sm:h-[260px] overflow-hidden shadow-sm">
                         <img
@@ -90,7 +90,7 @@ export default function AdvancedTechnology() {
             </div>
 
             {/* Bottom 4 Feature Items: 1 per line on mobile */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+            <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-10">
                     {techCards.map((card) => (
                         <div key={card.id} className="flex flex-col items-start bg-slate-50/70 sm:bg-transparent p-3.5 sm:p-0 rounded-xl sm:rounded-none border border-slate-100 sm:border-0">

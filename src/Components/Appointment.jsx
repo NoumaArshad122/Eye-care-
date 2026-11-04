@@ -45,7 +45,7 @@ export default function Appointment() {
             {/* Subtle Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/70 via-[#002b40]/50 to-[#002233]/40 pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
 
                     {/* Left Column: Heading & Info */}

@@ -36,7 +36,7 @@ export default function Footer() {
     return (
         <footer className="w-full bg-[#002b40] text-white pt-8 sm:pt-12 pb-6 border-t border-cyan-950/60">
             {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 pb-8 border-b border-cyan-900/40">
 
                     {/* Column 1: Brand & About */}

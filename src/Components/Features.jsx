@@ -11,7 +11,7 @@ const featureIcons = {
 export default function Features() {
     return (
         <section className="w-full bg-[#e6f2f7] border-b border-[#d3e8f2] py-4 sm:py-6 md:py-8">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full max-w-[95%] xl:max-w-[1720px] px-4 sm:px-6 lg:px-6">
                 <h2 className="sr-only">Key Hospital Features</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8 items-center">
                     {FEATURES.map((item) => (
