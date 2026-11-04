@@ -28,7 +28,7 @@ export default function Appointment() {
     return (
         <section
             id="appointment"
-            className="relative w-full bg-[#002b40] py-3 sm:py-10 md:py-12 lg:py-16 overflow-hidden scroll-mt-16 text-white"
+            className="relative w-full bg-[#002b40] py-6 sm:py-10 md:py-12 lg:py-16 overflow-hidden scroll-mt-16 text-white"
         >
             {/* Decorative Background Image */}
             <img
@@ -45,7 +45,7 @@ export default function Appointment() {
             {/* Subtle Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/70 via-[#002b40]/50 to-[#002233]/40 pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
 
                     {/* Left Column: Heading & Info */}
@@ -76,7 +76,7 @@ export default function Appointment() {
 
                     {/* Right Column: Appointment Form Card */}
                     <div className="lg:col-span-6 flex justify-center lg:justify-end">
-                        <div className="w-full max-w-lg bg-white rounded-xl sm:rounded-2xl shadow-2xl p-3.5 sm:p-7 md:p-8 text-gray-900 border border-cyan-900/10">
+                        <div className="w-full max-w-lg bg-white rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-7 md:p-8 text-gray-900 border border-cyan-900/10">
 
                             <h3 className="text-lg sm:text-2xl font-bold text-[#002b40] mb-4 sm:mb-6">
                                 Book Your Appointment

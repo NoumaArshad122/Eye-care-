@@ -4,7 +4,7 @@ import { CONTACT } from '../data/siteData';
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative w-full bg-white py-2.5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
+        <section id="contact" className="relative w-full bg-white py-5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
             {/* Desktop & Tablet Full-Bleed Hospital Building Image */}
             <div className="hidden md:block absolute inset-y-0 right-0 w-[50%] lg:w-[54%] xl:w-[55%] overflow-hidden [clip-path:polygon(14%_0,100%_0,100%_100%,0%_100%)]">
                 <img
@@ -19,10 +19,10 @@ export default function Contact() {
             </div>
 
             {/* Content Container */}
-            <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Mobile Image: Only shown on mobile (< md) */}
-                <div className="block md:hidden mb-4 w-full h-[180px] sm:h-[260px] overflow-hidden shadow-sm">
+                <div className="block md:hidden mb-5 w-full h-[200px] sm:h-[260px] overflow-hidden shadow-sm">
                     <img
                         src={buildingImg}
                         alt="Eye Hospital Building"

@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Mobile Image */}
-            <div className="block md:hidden relative w-full h-[180px] sm:h-[260px] overflow-hidden">
+            <div className="block md:hidden relative w-full h-[220px] sm:h-[280px] overflow-hidden">
                 <img
                     src={doctorPatientImg}
                     alt="Doctor checking patient"
@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
                 />
             </div>
 
-            <div className="mx-auto max-w-7xl pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 py-2.5 sm:py-8 md:py-10 lg:py-12 relative z-10">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 sm:py-8 md:py-10 lg:py-12 relative z-10">
                 <div className="w-full md:w-[48%] lg:w-[45%] space-y-3.5 sm:space-y-5">
                     <span className="text-xs md:text-sm tracking-widest uppercase text-cyan-700 font-bold">
                         WHY CHOOSE US

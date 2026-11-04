@@ -22,11 +22,11 @@ export default function Reviews() {
     ];
 
     return (
-        <section id="patient-stories" className="w-full bg-[#f0f7fb] py-2.5 sm:py-8 md:py-10 lg:py-14 scroll-mt-16">
-            <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8">
+        <section id="patient-stories" className="w-full bg-[#f0f7fb] py-5 sm:py-8 md:py-10 lg:py-14 scroll-mt-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-3.5 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-5 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
                     <SectionHeader
                         label="PATIENT STORIES"
                         title="What Our Patients Say"
@@ -55,11 +55,11 @@ export default function Reviews() {
                 </div>
 
                 {/* Testimonial Cards: 1 on mobile, 3 on md+ */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-6 md:gap-8">
                     {visibleReviews.map((review, idx) => (
                         <div
                             key={review.id}
-                            className={`bg-white rounded-xl sm:rounded-2xl p-3.5 sm:p-7 md:p-8 shadow-sm border border-cyan-100/60 flex-col justify-between hover:shadow-md transition-all duration-300 hover:-translate-y-1 ${idx > 0 ? 'hidden md:flex' : 'flex'}`}
+                            className={`bg-white rounded-xl sm:rounded-2xl p-4 sm:p-7 md:p-8 shadow-sm border border-cyan-100/60 flex-col justify-between hover:shadow-md transition-all duration-300 hover:-translate-y-1 ${idx > 0 ? 'hidden md:flex' : 'flex'}`}
                         >
                             {/* Quote Icon & Text */}
                             <div>

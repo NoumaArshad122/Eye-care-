@@ -31,7 +31,7 @@ const techCards = [
 
 export default function AdvancedTechnology() {
     return (
-        <section id="technology" className="relative w-full bg-white py-2.5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
+        <section id="technology" className="relative w-full bg-white py-5 sm:py-8 md:py-10 lg:py-12 overflow-hidden scroll-mt-16">
             {/* Top Area: Text & Full-Bleed Right Image */}
             <div className="relative w-full">
                 {/* Desktop & Tablet Full-Bleed Image: touches right edge of screen with zero margin */}
@@ -48,9 +48,9 @@ export default function AdvancedTechnology() {
                 </div>
 
                 {/* Left Content Container (matches max-w-7xl alignment) */}
-                <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     {/* Mobile Image: At top for mobile (< md) */}
-                    <div className="block md:hidden mb-4 w-full h-[180px] sm:h-[260px] overflow-hidden shadow-sm">
+                    <div className="block md:hidden mb-5 w-full h-[200px] sm:h-[260px] overflow-hidden shadow-sm">
                         <img
                             src={techImage}
                             alt="Advanced Eye Technology Equipment"
@@ -90,10 +90,10 @@ export default function AdvancedTechnology() {
             </div>
 
             {/* Bottom 4 Feature Items: 1 per line on mobile */}
-            <div className="max-w-7xl mx-auto pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 mt-4 sm:mt-8 md:mt-10 lg:mt-12">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-6 lg:gap-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-10">
                     {techCards.map((card) => (
-                        <div key={card.id} className="flex flex-col items-start bg-slate-50/70 sm:bg-transparent p-2.5 sm:p-0 rounded-xl sm:rounded-none border border-slate-100 sm:border-0">
+                        <div key={card.id} className="flex flex-col items-start bg-slate-50/70 sm:bg-transparent p-3.5 sm:p-0 rounded-xl sm:rounded-none border border-slate-100 sm:border-0">
                             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-700 mb-2.5 sm:mb-3 border border-cyan-100/50">
                                 {card.icon}
                             </div>

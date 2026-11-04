@@ -4,9 +4,9 @@ import SectionHeader from './ui/SectionHeader';
 
 export default function Doctors() {
     return (
-        <section id="doctors" className="py-2.5 sm:py-8 md:py-10 lg:py-12 pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+        <section id="doctors" className="py-5 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
 
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-3.5 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-5 sm:mb-8 md:mb-10 gap-3 sm:gap-4">
                 <SectionHeader
                     title="Our Expert Doctors"
                     description="Meet our team of highly qualified and experienced eye specialists who are dedicated to your vision and eye health."
@@ -22,7 +22,7 @@ export default function Doctors() {
             </div>
 
             {/* Doctors Cards: 1 by 1 on mobile */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
                 {DOCTORS.map((doctor) => (
                     <div
                         key={doctor.id}
@@ -40,7 +40,7 @@ export default function Doctors() {
                             />
                         </div>
 
-                        <div className="p-3.5 sm:p-5 flex items-end justify-between">
+                        <div className="p-4 sm:p-5 flex items-end justify-between">
                             <div>
                                 <h3 className="font-bold text-gray-900 text-base md:text-lg leading-snug">
                                     {doctor.name}

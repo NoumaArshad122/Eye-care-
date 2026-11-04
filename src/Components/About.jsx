@@ -3,10 +3,10 @@ import Button from "./ui/Button";
 
 export default function About() {
     return (
-        <section id="about" className="py-2.5 sm:py-8 md:py-10 lg:py-12 pl-2 pr-3 sm:pl-4 sm:pr-6 lg:pl-5 lg:pr-8 bg-white max-w-7xl mx-auto scroll-mt-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 md:gap-12 items-center">
+        <section id="about" className="py-5 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl mx-auto scroll-mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 md:gap-12 items-center">
 
-                <div className="w-full h-[200px] sm:h-[280px] md:h-[360px] lg:h-[420px] overflow-hidden shadow-sm">
+                <div className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[420px] overflow-hidden shadow-sm">
                     <img
                         src={Reception}
                         alt="Hospital Reception"
