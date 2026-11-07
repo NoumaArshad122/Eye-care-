@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-0 sm:min-h-[480px] md:min-h-[580px] lg:min-h-[660px] xl:min-h-[700px] w-full items-center overflow-hidden bg-[#002b40] py-5 sm:py-8 md:py-10"
+      className="relative flex min-h-0 sm:min-h-[360px] md:min-h-[420px] lg:min-h-[460px] xl:min-h-[480px] w-full items-center overflow-hidden bg-[#002b40] py-2 sm:py-2.5 md:py-3"
     >
       {/* Decorative Background Image with LCP Optimization */}
       <img
