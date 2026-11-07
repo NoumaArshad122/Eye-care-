@@ -41,25 +41,16 @@ export default function Footer() {
 
                     {/* Column 1: Brand & About */}
                     <div className="space-y-4">
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center">
                             <img
                                 src={logo}
-                                alt=""
-                                aria-hidden="true"
+                                alt="Eye Hospital logo"
                                 loading="lazy"
                                 decoding="async"
                                 className="h-10 w-auto object-contain"
-                                width={40}
+                                width={120}
                                 height={40}
                             />
-                            <div>
-                                <h3 className="text-xl font-bold tracking-tight text-white leading-none">
-                                    Eye Hospital<span className="text-cyan-400">.com</span>
-                                </h3>
-                                <p className="text-[11px] font-medium tracking-wider mt-1 text-cyan-100">
-                                    Clear Vision • Better Tomorrow
-                                </p>
-                            </div>
                         </div>
 
                         <p className="text-gray-300 text-sm leading-relaxed pt-2">
