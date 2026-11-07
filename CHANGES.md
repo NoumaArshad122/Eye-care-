@@ -204,6 +204,14 @@
 
 ---
 
+### Phase 13: ٹیبلٹ ورژن پر فوٹر گرڈ کو 2 کالمز میں تبدیل کرنا (Tablet Footer 2-Column Grid Layout)
+1. **Footer گرڈ کی ٹیبلٹ لے آؤٹ میں اصلاح**:
+   - `Footer.jsx`: ٹیبلٹ ویو (`sm:` اور `lg:` یعنی 640px سے لے کر 1279px تک کے تمام ٹیبلٹس، آئی پیڈز بشمول iPad Air اور iPad Pro) پر فوٹر گرڈ کو 2 کالمز میں تقسیم کر دیا گیا:
+     `grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4`.
+   - اس سے ٹیبلٹ پر فوٹر کے 4 کالمز خوبصورت 2x2 تناسب (پہلی لائن میں Brand اور Quick Links، دوسری لائن میں Services اور Contact Info) میں متوازن نظر آتے ہیں اور کوئی کالم اکیلا یا بے ترتیب نہیں رہتا۔
+
+---
+
 ## 2. فائل وار تفصیلات (File-by-File Summary Table)
 
 | فائل کا راستہ (File Path) | قسم (Type) | اہم تبدیلیاں (Key Changes) |
