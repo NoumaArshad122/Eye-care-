@@ -37,7 +37,7 @@ export default function Footer() {
         <footer className="w-full bg-[#002b40] text-white pt-8 sm:pt-12 pb-6 border-t border-cyan-950/60">
             {/* Main Footer Content */}
             <div className="w-full max-w-[95%] xl:max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 pb-8 border-b border-cyan-900/40">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 pb-8 border-b border-cyan-900/40">
 
                     {/* Column 1: Brand & About */}
                     <div className="space-y-4">
@@ -129,14 +129,14 @@ export default function Footer() {
                         <ul className="space-y-3.5">
                             <li className="flex items-center gap-3">
                                 <Phone className="w-4 h-4 text-cyan-400 shrink-0" aria-hidden="true" />
-                                <a href={`tel:${CONTACT.phoneTel}`} className="text-gray-300 text-sm hover:text-cyan-400 transition-colors">
+                                <a href={`tel:${CONTACT.phoneTel}`} className="text-gray-300 text-sm hover:text-cyan-400 transition-colors whitespace-nowrap">
                                     {CONTACT.phoneDisplay}
                                 </a>
                             </li>
 
                             <li className="flex items-center gap-3">
                                 <Mail className="w-4 h-4 text-cyan-400 shrink-0" aria-hidden="true" />
-                                <a href={`mailto:${CONTACT.email}`} className="text-gray-300 text-sm hover:text-cyan-400 transition-colors">
+                                <a href={`mailto:${CONTACT.email}`} className="text-gray-300 text-sm hover:text-cyan-400 transition-colors break-all sm:break-normal">
                                     {CONTACT.email}
                                 </a>
                             </li>
